@@ -1,7 +1,8 @@
-#!/usr/bin/enb bash
+#!/usr/bin/env bash
 sudo apt update
 sudo apt upgrade
 
+sudo apt install curl
 curl https://dl.brave.com/install.sh | bash
 
 wget -qO - https://dl.xanmod.org/archive.key | sudo gpg --dearmor -vo /etc/apt/keyrings/xanmod-archive-keyring.gpg
